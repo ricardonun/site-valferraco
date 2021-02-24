@@ -1,0 +1,87 @@
+@media only screen and (max-device-width: 900px) {
+}
+
+body {
+    padding: 0;
+    margin-left: ;
+}
+
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    background-color: #2a516f;
+    max-width: 500px;
+	padding-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 5%;	
+    color: #FFFFFF;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+input#Nome, textarea#Nome {
+    width: 260px;
+    padding: 3px;
+    color: white;
+    margin-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+input#fone, textarea#fone {
+    width: 260px;
+    padding: 3px;
+    color: white;
+    margin-left: 20px;
+	text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+input#email, textarea {
+    width: 280px;
+    padding: 2px;
+    color: white;
+    margin-left: 20px;
+	text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFFFF;
+    /*background-color: #66FFFF;*/
+    color: black;
+    font-weight: bold;
+}
+
+.submit input {
+    background-color: #66FFFF;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 200px;
+    height: 10px;
+    line-height: 20px;
+    max-width: 450px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 500px;
+}

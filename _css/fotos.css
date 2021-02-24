@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+ul#album-foto{
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+ul#album-foto li span{
+	opacity: 0;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background: rgba(0,0,0,.3);
+	font-size: 15pt;
+	line-height: 370px;
+	padding: 5px;
+}
+
+ul#album-foto li:hover span {
+	opacity: 1;
+}
+
+ul#album-foto li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+	-webkit-transition: all .5s ease-in;
+}
+
+/* Configuração fotos aba produtos*/
+ul#album-foto li:hover{
+	-webkit-transform: scale(1.5);
+}
+ul#album-foto li#foto1:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#foto2:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#foto3:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#foto1{
+	background: url('../_imagens/ferro-01.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-foto li#foto2{
+	background: url('../_imagens/ferro-02.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-foto li#foto3{
+	background: url('../_imagens/ferro-03.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+/* Configuração fotos aba Ferro*/ 
+ul#album-foto li#quad:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#ret:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#red:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#quad{
+	background: url('../_imagens/tubo-quadrado.png');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-foto li#ret{
+	background: url('../_imagens/tubo-retangular.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-foto li#red{
+	background: url('../_imagens/tubo-redondo.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+
+/* Configuração fotos aba Tubos*/ 
+ul#album-foto li#chato:hover {
+	background-position: 0px 0px;/* Configuração das tabelas nos catalogo */
+	background-size: 200px 200px;
+}section#tabela-chato img#foto-chato{
+/*	background-position: 50% 50%;
+ul#album-foto li#canto:hover {	background-size: 400px 400px;
+	background-position: 0px 0px;	background-color: #ffffff;*/
+	background-size: 200px 200px;	margin-left: 50px 50px;
+}	display: block;	
+}
+ul#album-foto li#t:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+
+ul#album-foto li#chato{
+	background: url('../_imagens/chato.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-foto li#canto{
+	background: url('../_imagens/cant.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album-foto li#t{
+	background: url('../_imagens/t.jpg');
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}

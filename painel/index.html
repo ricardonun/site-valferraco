@@ -1,0 +1,83 @@
+﻿
+<html>
+<head>
+	<title> Valferraço</title>
+	<link rel="icon" href="../_imagens/favicon.ico" type="image/x-icon" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css"href="styles.css">
+
+</head>
+
+<body id="body">
+	<div id="Login">
+		<div class="Login">
+			<h7>Seja Bem vindo, Faça seu login</h7>
+			<p>Login</p><input class='login' id='login'>
+			<p>Senha</p><input class='password' type='password' id='password'>
+			<button class='logar' id='logar'>Entrar</button>
+		</div>
+		
+	</div>
+</body>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="Logar.js"></script>
+		<script type="text/javascript" src="./ManDOC/PainelLogado.js"></script>
+		<script> 	
+
+		
+		$('#logar').click(function(){
+			axios.get('http://localhost:30001/users')
+			.then(function(response){
+				//console.log(response.data)
+				const { length } = response.data 
+				const login = $('#login').val()
+				
+				for (let i = 0; i < length; i++) {
+					if($('#login').val() == response.data[i].login && $('#password').val() == response.data[i].password){
+						//alert('Logado')
+						ClearBody()
+						LoaderPainel(response.data[i].login)
+
+						$('#btnEdit').click(function(){
+							ClearDcenter()
+							LoaderProduct()
+						});	
+
+						$('#btnAdd').click(function(){
+							ClearDcenter()
+							LoaderProductAdd()
+						});	
+					}else{
+						alert('Senha ou login incorretos');
+					}
+					
+					
+				}
+			})
+			.catch(function(error){
+				console.log(error)
+			})
+		})
+		/*ClearBody()
+		LoaderPainel('Ricardo')
+
+		$('#btnEdit').click(function(){
+			ClearDcenter()
+			LoaderProduct()
+		});	
+
+		$('#btnAdd').click(function(){
+			
+			ClearDcenter()
+			LoaderProductAdd()
+		});	
+		*/
+
+
+
+		</script>
+</html>
